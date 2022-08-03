@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Strat Hawk</title>
+</head>
+
+<body>
+    <div class="nav">
+        <h1 class="logo">Strat Hawk</h1>
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="booking.html">Booking</a>
+        <a class="nav-item" href="destinations.html">Destinations</a>
+        <a class="nav-item" href="login.html">Login</a>
+        <a class="nav-item" href="Signup.html">Sign Up</a>
+    </div>
+    <img class="banner-image" src="images/flight.jpeg" width="30%">
+    <div class="shading"></div>
+    <div class="banner-text">The World is yours.</div>
+    <div class="search-form-container">
+    <h2 class="heading">Search Flights</h2>
+    <form method="post" action="index.html">
+        <div class="“search-element-container”,">
+                <div class="form-group">
+                    <input class="form-input" type="text" name="from" placeholder="From" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-input" type="text" name="To" placeholder="To" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-input" type="text" name="Travel Date" placeholder="Travel Date yyyy-mm-dd"
+                        pattern="([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))" required title="yyyy-mm-dd format">
+                </div>
+                <div class="form-group">
+                    <select class="form-input" name="class">
+                        <option value="Economy">Economy</option>
+                        <option value="Bussiness">Bussiness</option>
+                        <option value="First">First Class</option>
+                    </select>
+                </div>
+        </div>
+        <div>
+            <input type="submit" value="Search" class="btn">
+        </div>
+    </form>
+</div>
+    <div class="recommended-flights">
+        <h2 class="recommended-flights-heading">Recommended Flights</h2>
+        <div class="flights">
+        <div class="flight">
+            <div class="flight-number">SH228</div>
+            <div class="schedule">
+                <div class="departure">
+                    <div class="from">Berlin (BER)</div>
+                    <div class="departTime">21:00</div>
+                    <div class="departDate">Wed 28 july 2022</div>
+                </div>
+                <div class="duration">49 hours 5 Minutes</div>
+                <div class="arrival">
+                    <div class="to">SYDNEY (SYD)</div>
+                    <div class="arriveTime">22:24 </div>
+                    <div class="arriveDate">Thursday 31 july 2022</div>
+                </div>
+            </div>
+            <div class="cost">$3,441</div>
+            <form action="booking.html">
+                <input type="submit" value="Book" class="btn">
+            </form>
+        </div>
+        <div class="flight">
+            <div class="flight-number">SH235</div>
+            <div class="schedule">
+                <div class="departure">
+                    <div class="from">Sydney (SYD)</div>
+                    <div class="departTime">22:24</div>
+                    <div class="departDate">Thurs 24 july 2022</div>
+                </div>
+                <div class="duration">23 hours 15 Minutes</div>
+                <div class="arrival">
+                    <div class="to">Berlin (BER)</div>
+                    <div class="arriveTime">21:00 </div>
+                    <div class="arriveDate">Wed 26 july 2022</div>
+                </div>
+            </div>
+            <div class="cost">$809</div>
+            <form action="booking.html">
+                <input type="submit" value="Book" class="btn">
+            </form>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
